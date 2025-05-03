@@ -1,5 +1,3 @@
-Let’s break down everything shown in your image (sections 6, 7, and 8 of ER Model) into very simple, clear explanations with examples. These topics are:
-
 1. **Relationships**
 2. **Relationship Constraints**
 3. **ER Notations**
