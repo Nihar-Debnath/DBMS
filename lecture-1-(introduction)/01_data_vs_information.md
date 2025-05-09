@@ -5,8 +5,6 @@ When people say **"data is the new oil,"** they mean:
 - **But** — like crude oil, raw data by itself is **not very useful**.  
 - It needs to be **processed, refined, and analyzed** to create **valuable products** (like information, knowledge, insights).
 
----
-
 **Real-world example:**
 
 🔹 Suppose you run an online clothing store.
@@ -27,8 +25,6 @@ When people say **"data is the new oil,"** they mean:
 🔹 Using this **information**, you can:
 - Offer free delivery on sneakers in New York
 - Boost your sales
-
----
 
 **Summary:**  
 - **Data = Crude oil** (raw and useless until refined)  

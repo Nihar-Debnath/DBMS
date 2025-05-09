@@ -1,6 +1,4 @@
-You listed common problems in **traditional file systems**. A **DBMS (Database Management System)** solves these problems much better. Let's explain each one:
-
----
+A **DBMS (Database Management System)** solves these problems much better. Let's explain each one:
 
 ### i. **Data Redundancy and Inconsistency**
 - **Problem in File System:**  
@@ -11,8 +9,6 @@ You listed common problems in **traditional file systems**. A **DBMS (Database M
   Data is **stored only once** in centralized tables.  
   If you update it in one place, it updates everywhere automatically (because other modules fetch from that central table).
 
----
-
 ### ii. **Difficulty in Accessing Data**
 - **Problem in File System:**  
   If you want complex data (e.g., "List of students who borrowed books and won prizes"), you have to manually search multiple files and combine info — very hard and time-consuming.
@@ -21,8 +17,6 @@ You listed common problems in **traditional file systems**. A **DBMS (Database M
   **SQL queries** can easily retrieve complex information by joining tables.  
   Example: `SELECT * FROM students JOIN library ON students.id = library.student_id;`
 
----
-
 ### iii. **Data Isolation**
 - **Problem in File System:**  
   Data is scattered across many different files and formats (text files, spreadsheets, etc.). It's **isolated** and difficult to link.
@@ -30,8 +24,6 @@ You listed common problems in **traditional file systems**. A **DBMS (Database M
 - **How DBMS helps:**  
   **Relational models** organize all data logically (tables, relationships).  
   It's easy to connect and access related data.
-
----
 
 ### iv. **Integrity Problems**
 - **Problem in File System:**  
@@ -45,8 +37,6 @@ You listed common problems in **traditional file systems**. A **DBMS (Database M
   - Foreign keys must match
   This **ensures data correctness**.
 
----
-
 ### v. **Atomicity Problems**
 - **Problem in File System:**  
   Suppose a money transfer needs two operations:
@@ -58,8 +48,6 @@ You listed common problems in **traditional file systems**. A **DBMS (Database M
   DBMS ensures **Atomicity** — either **both** steps happen, or **none** happen.  
   This protects against incomplete operations (using Transactions).
 
----
-
 ### vi. **Concurrent-access Anomalies**
 - **Problem in File System:**  
   If two people edit the same file at once, data can get corrupted (overwritten changes).
@@ -67,8 +55,6 @@ You listed common problems in **traditional file systems**. A **DBMS (Database M
 - **How DBMS helps:**  
   DBMS handles **Concurrency Control** —  
   It uses techniques like locking to make sure multiple users can safely read/write data at the same time without conflicts.
-
----
 
 ### vii. **Security Problems**
 - **Problem in File System:**  
@@ -80,8 +66,6 @@ You listed common problems in **traditional file systems**. A **DBMS (Database M
   - Example:  
     - Clerk can see student names but **not** their financial details.  
     - Admin can see everything.
-
----
 
 ### **Summary Table**
 
@@ -96,9 +80,6 @@ You listed common problems in **traditional file systems**. A **DBMS (Database M
 | Security                  | Basic file-level security             | Advanced access control         |
 
 ---
----
----
-
 
 Let’s take a **banking** example — super relatable!
 
@@ -117,8 +98,6 @@ Suppose you want to transfer ₹10,000 from **Account A** to **Account B**.
   - No automatic check if Account A even had ₹10,000 balance (no integrity check).
   - Security is weak — anyone who can open the files can **see** or **edit** balances.
   - Difficult to generate reports like "All accounts where balance < ₹5,000" — you have to open and scan each file manually.
-
----
 
 ## **In a DBMS:**
 
@@ -139,8 +118,6 @@ Suppose you want to transfer ₹10,000 from **Account A** to **Account B**.
     - Only managers can transfer money.
   - **Fast access:** One SQL query can instantly show all accounts with balance < ₹5,000.
 
----
-
 ## **Quick Visualization**
 
 | Action                    | File System                         | DBMS                             |
@@ -151,7 +128,6 @@ Suppose you want to transfer ₹10,000 from **Account A** to **Account B**.
 | Check Balance Before Transfer | Manual or none                  | Automatic integrity constraint  |
 | Security                   | Weak (file-level)                   | Strong (role-based permissions) |
 
----
 
 ### **Simple SQL Transaction in DBMS:**
 
@@ -171,7 +147,6 @@ COMMIT;
 
 If anything fails (like insufficient balance), the **whole transaction is rolled back** automatically!
 
----
 
 **In short:**  
 - **File system = manual, risky, slow, unsafe.**  

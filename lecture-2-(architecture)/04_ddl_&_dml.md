@@ -2,8 +2,6 @@
 
 Both DDL and DML are crucial subsets of SQL (Structured Query Language) that allow users to interact with databases in different ways. Here's a detailed breakdown of each:
 
----
-
 ## 1. **DDL (Data Definition Language)**
 
 ### **What is DDL?**
@@ -44,8 +42,6 @@ Both DDL and DML are crucial subsets of SQL (Structured Query Language) that all
 - **Permanent changes**: Changes made using DDL commands are permanent. For example, if you **drop** a table, the table and its data are permanently deleted.
 - **Schema-level** operations: DDL deals with **database schema** (structure), not the data.
 
----
-
 ## 2. **DML (Data Manipulation Language)**
 
 ### **What is DML?**
@@ -83,8 +79,6 @@ Both DDL and DML are crucial subsets of SQL (Structured Query Language) that all
 - **Data-level** operations: DML deals with the **actual data** in the tables, not the structure.
 - **Temporary changes**: Changes made through DML can be undone (using rollback, if in a transactional system) unless committed to the database.
 
----
-
 ### **Comparison Between DDL and DML**
 
 | **Category**          | **DDL (Data Definition Language)**                    | **DML (Data Manipulation Language)**                        |
@@ -94,8 +88,6 @@ Both DDL and DML are crucial subsets of SQL (Structured Query Language) that all
 | **Effect**            | **Schema-level** changes, permanent changes to structure. | **Data-level** changes, affects the content of tables.      |
 | **Undo capability**   | Changes are **permanent** (no rollback possible).      | Changes can be **rolled back** (if in a transactional system). |
 | **Example Usage**     | Defining tables, modifying schema, deleting structures. | Retrieving, inserting, or modifying records in tables.      |
-
----
 
 ### **Real-World Example:**
 Let's assume you are managing a **Library Database**.
@@ -143,8 +135,6 @@ Let's assume you are managing a **Library Database**.
   ```sql
   DELETE FROM Books WHERE book_id = 1;
   ```
-
----
 
 In summary:
 - **DDL** is used to define the **structure** of the database and its objects, like creating tables or altering schema.

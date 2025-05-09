@@ -58,7 +58,7 @@
 
 ### ✅ **6. Weak Key Attribute (Partial Key)**
 
-* **Shape:** Dashed Oval or Dotted underlined oval
+* **Shape:** Dashed Oval
 * **Use When:** Used with a **strong entity’s key** to identify a **weak entity**.
 * **Example:**
 
@@ -70,13 +70,42 @@
 
 ### ✅ **7. Derived Attribute**
 
-* **Shape:** Dashed Oval (Dotted Border)
+* **Shape:** Dashed oval (like weak key), but not part of weak entity
 * **Use When:** The attribute is **calculated** from other data.
 * **Example:**
 
   * `Age` (derived from Date\_of\_Birth)
   * `Total_Price` (derived from quantity × unit price)
   * `Tenure` (derived from joining date)
+
+
+> **"Dashed oval (like weak key), but not part of weak entity"**
+
+### 🔍 What it really means:
+
+Both **weak key attributes** and **derived attributes** are shown as **dashed ovals** in an ER diagram. But they are **used differently**, and their **meanings are not the same**.
+
+Let’s compare:
+
+## 🔹 1. Weak Key Attribute (Partial Key)
+
+* Belongs to a **weak entity**
+* Helps identify the weak entity **together with** a related strong entity’s key
+* Example: `DependentName` for a `Dependent` (weak entity), which needs `EmpID` from `Employee` to be fully identified
+
+## 🔹 2. Derived Attribute
+
+* Not stored in the database
+* Calculated using other data
+* Example: `Age` derived from `DateOfBirth`
+
+### 🔁 In short:
+
+| Attribute Type     | Dashed Oval? | Belongs to Weak Entity? | Stored in DB? | Example        |
+| ------------------ | ------------ | ----------------------- | ------------- | -------------- |
+| Weak Key Attribute | ✅ Yes        | ✅ Yes                   | ✅ Yes         | DependentName  |
+| Derived Attribute  | ✅ Yes        | ❌ No                    | ❌ No          | Age (from DOB) |
+
 
 ### ✅ **8. Relationship**
 

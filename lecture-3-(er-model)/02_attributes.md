@@ -1,5 +1,3 @@
-Let's now go through the content from your second image in **very detailed**, **simple**, and **beginner-friendly** language, with plenty of **examples** so it’s easy to understand.
-
 ## 🔷 5. Attributes
 
 ### ➤ What is an Attribute?

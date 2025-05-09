@@ -93,19 +93,120 @@ Not all entities in the set need to participate.
 
 * **Customers** may or may not **borrow a loan**.
 
-### 🔸 Total Participation
+## 🔸 **Total Participation** (explained like you’re 10)
 
-**All entities** must participate in the relationship at least once.
+### 💡 Imagine a Relationship in Real Life:
 
-✅ Example:
+Think of a **relationship** in a database like a connection between two things.
 
-* **Loan** – must be connected to a **Customer** (can’t exist alone)
-* So, **Loan** has total participation in the relationship with Customer.
+Let’s say:
 
-📌 **Note:**
+* **Customer** takes a **Loan**
+* This is a relationship: `TakesLoan(Customer, Loan)`
 
-* Weak entities always need **Total Participation** with their strong entity.
-* Strong entities may or may not have total participation.
+Now, the question is:
+
+> **Can a loan exist in the system if no one has taken it?**
+
+The answer is **NO** — a **Loan** must be connected to a **Customer**.
+It **can’t be alone** like a ghost loan floating around.
+
+That’s called **Total Participation**.
+
+## ✅ Total Participation: In Simple Words
+
+> **All items (entities) in one table must be connected to something in another table.**
+
+If an entity has **total participation** in a relationship, that means:
+
+* **Every single record** in that entity **must** take part in the relationship.
+
+### 🔁 Example:
+
+| Customer\_ID | Name  |
+| ------------ | ----- |
+| 101          | Alice |
+| 102          | Bob   |
+
+| Loan\_ID | Amount | Customer\_ID |
+| -------- | ------ | ------------ |
+| L001     | 5000   | 101          |
+| L002     | 10000  | 102          |
+
+Here:
+
+* Every **Loan** must be linked to a **Customer** → ✅ **Total Participation of Loan**
+* But a **Customer** may not have taken any loan → ❌ **Not total participation for Customer**
+
+### 📌 Weak Entities Always Have Total Participation
+
+* A **weak entity** means it **cannot exist without another entity.**
+* Example: **Dependent** of an employee (like a child or spouse listed in employee benefits)
+
+So:
+
+* **Dependent** (weak) always needs an **Employee** (strong)
+* That means **Dependent** has **total participation** in the relationship with Employee
+
+## 📷 Picture This:
+
+```
+Customer ----------- Loan
+            |
+         takes
+```
+
+If **every loan** MUST be linked to a customer → **Loan has Total Participation**
+
+If **some customers** have no loans → **Customer does NOT have Total Participation**
+
+## 🚩 Summary
+
+| Concept                 | Meaning                                                        |
+| ----------------------- | -------------------------------------------------------------- |
+| **Total Participation** | Every entity **must be linked** in the relationship            |
+| **Loan → Customer**     | Loan needs Customer → Total Participation of Loan              |
+| **Weak Entities**       | Always have total participation with the entity they depend on |
+| **Strong Entities**     | May or may not have total participation                        |
+
+## 🔁 Let’s Revisit the Example with YOU in It:
+
+You are a **Customer** in a bank.
+
+* You have a **bank account**
+* But you **do not have a loan**
+
+So in this case:
+
+* You exist in the **Customer** table ✅
+* But you are **not connected** to any **Loan** ❌
+
+### ✅ What This Proves:
+
+* The **Customer** entity **does not have Total Participation** in the `TakesLoan` relationship.
+
+  * Because **some customers (like you)** don’t have a loan.
+
+But let’s think about the **Loan** side:
+
+* Can a **Loan** exist in the system **without** a Customer?
+
+  * No! Every Loan must be linked to someone who took it.
+
+✅ So the **Loan** entity **does have Total Participation** in the relationship with Customer.
+
+## 🧠 Simple Rule to Remember:
+
+| Entity   | Must be in Relationship?      | Total Participation? |
+| -------- | ----------------------------- | -------------------- |
+| Customer | ❌ Not always                  | ❌ No                 |
+| Loan     | ✅ Always linked to a customer | ✅ Yes                |
+
+## 🔔 In summary:
+
+* **You, as a customer without a loan**, prove that **Customer → Loan** is **not total participation**.
+* But if a **Loan is made**, it always needs a **Customer**, so **Loan → Customer** is **total participation**.
+
 
 ## 🔹 8. ER Notations
 
@@ -117,7 +218,7 @@ ER Notations are **symbols** used to draw the ER Diagram. Examples include:
 | Diamond          | Relationship              |
 | Oval             | Attribute                 |
 | Double Oval      | Multivalued Attribute     |
-| Underlined       | Key attribute (unique ID) |
+| Oval Underlined  | Primary Key attribute     | 
 | Double Rectangle | Weak Entity               |
 | Double Diamond   | Weak Relationship         |
 

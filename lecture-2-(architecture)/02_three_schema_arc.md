@@ -158,8 +158,6 @@ Imagine you're using **Amazon** to buy a phone:
 
 
 ---
----
----
 
 # 📚 What the statement means:
 

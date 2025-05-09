@@ -1,14 +1,8 @@
-Alright, let's dive into this in a **simple** and **real-world** way:
-
----
-
 # 🧠 What is **Abstraction**?
 
 **Abstraction** means **hiding unnecessary details** and **showing only what is needed**.
 
 It simplifies complex systems so users or developers don't have to deal with the messy inner workings — they can just **use** the system easily.
-
----
 
 # 🌍 Real-world Example: **Car Driving**
 
@@ -21,16 +15,12 @@ It simplifies complex systems so users or developers don't have to deal with the
 ✅ That's **abstraction**:  
 **Use a complex system without needing to understand its complexity.**
 
----
-
 # 💻 How Abstraction Changed Computer Systems:
 
 ## 1. **Before Abstraction (Early Computers):**
 - People had to work directly with **machine code** (like 01010101).
 - Even for simple tasks, you had to manage memory, CPU, devices manually.
 - Computers were super hard to use and only experts (scientists, engineers) could handle them.
-
----
 
 ## 2. **After Abstraction (Modern Computers):**
 - **Operating Systems** (like Windows, Linux) **abstract** hardware complexities.
@@ -43,8 +33,6 @@ It simplifies complex systems so users or developers don't have to deal with the
   - When you call Google Maps in an app, you don’t worry how GPS satellites work.
 
 ✅ Now, normal people — not just scientists — can use and build on computers easily.
-
----
 
 # 🚀 Real-world Computer Example:
 
@@ -60,8 +48,6 @@ It simplifies complex systems so users or developers don't have to deal with the
 - More people (even non-hardware experts) can create amazing technology.  
 - Massive growth in tech industry!
 
----
-
 # ⚡ Summary:
 
 | Without Abstraction                  | With Abstraction                    |
@@ -70,17 +56,8 @@ It simplifies complex systems so users or developers don't have to deal with the
 | Only experts could work               | Everyone can participate            |
 | Slower development                    | Rapid innovation                    |
 
----
-
 **In short:**  
 👉 **Abstraction turned computers from scary machines into everyday tools we all can use easily.**
-
----
----
----
-
-
-Awesome question! Let’s go deep but in a **very simple** way:
 
 ---
 
@@ -91,7 +68,7 @@ In **DBMS**, abstraction **hides the complexity** of how data is stored, organiz
 ✅ You don’t need to know *where* exactly the data is stored on the disk.  
 ✅ You just **ask for data** using a simple query (like SQL), and the DBMS handles everything behind the scenes.
 
----
+
 
 # 🔥 Real-world Example:
 
@@ -115,19 +92,17 @@ SELECT name FROM customers WHERE city = 'Delhi';
 ✅ **All of that complexity is abstracted away.**  
 ✅ You just **get your results**.
 
----
+
 
 # 🏛️ Levels of Abstraction in DBMS
 
 In DBMS, there are **three levels** of abstraction:
 
 | Level              | What It Shows                  | Example                        |
-|--------------------|---------------------------------|--------------------------------|
+|-----------------|---------------------------------|--------------------------------|
 | **View Level**      | What the user sees (custom views) | A table showing only Name and Balance for bank clerks |
 | **Logical Level**   | What data is stored, and what relationships exist | Tables like Customers, Accounts, Loans |
 | **Physical Level**  | How data is actually stored in memory/disks | Files, indexes, clusters |
-
----
 
 # 📦 Another Simple Analogy
 
@@ -139,8 +114,6 @@ Imagine ordering food from Zomato:
 
 You don't care how it all happens — **you just get your food**. 🍔🚀  
 👉 Exactly how DBMS handles your data without showing you the "cooking process."
-
----
 
 # ✨ Quick Summary
 
