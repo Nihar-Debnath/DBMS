@@ -10,8 +10,7 @@ When working with databases, information is stored in multiple **tables**. Often
 - A **Foreign Key (FK)** is a column in one table that refers to the **Primary Key (PK)** in another table.
 - It is how one table **connects** to another.
 
-Example:
-| **Customers** Table |
+Example: **Customers** Table
 | id (PK) | name     |
 |---------|----------|
 | 1       | Alice    |

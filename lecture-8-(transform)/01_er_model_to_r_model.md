@@ -89,12 +89,12 @@ It becomes a **column** in the relational table.
 
 ```
 Employee Table
-+----------+--------+
-| EmpID    | Email  |
-+----------+--------+
-| 1        | raj@x.com |
++----------+-------------+
+| EmpID    | Email       |
++----------+-------------+
+| 1        | raj@x.com   |
 | 2        | priya@x.com |
-+----------+-----------+
++----------+-------------+
 ```
 
 ## 4. 🧩 Composite Attributes
@@ -199,11 +199,11 @@ So, in the table:
 
 ```
 Employee Table
-+--------+----------+
-| EmpID  | DOB      |
-+--------+----------+
++--------+------------+
+| EmpID  | DOB        |
++--------+------------+
 | 1      | 2000-05-01 |
-+--------+----------+
++--------+------------+
 
 (Not storing Age)
 ```
@@ -243,13 +243,13 @@ There are **two ways (methods)** to convert this into tables in a relational mod
 
 ```
 Account
-+----------------+--------+
-| AccountNumber  | Balance|
-+----------------+--------+
-| A001           | 5000   |
-| A002           | 2000   |
-| A003           | 3000   |
-+----------------+--------+
++----------------+---------+
+| AccountNumber  | Balance |
++----------------+---------+
+| A001           | 5000    |
+| A002           | 2000    |
+| A003           | 3000    |
++----------------+---------+
 ```
 
 #### 2️⃣ Table: SavingsAccount
@@ -272,9 +272,9 @@ SavingsAccount
 ```
 CurrentAccount
 +----------------+-----------------+------------------------+
-| AccountNumber  | OverdraftAmount | PerTransactionCharges |
+| AccountNumber  | OverdraftAmount | PerTransactionCharges  |
 +----------------+-----------------+------------------------+
-| A002           | 1000            | 5                     |
+| A002           | 1000            | 5                      |
 +----------------+-----------------+------------------------+
 ```
 
@@ -314,9 +314,9 @@ SavingsAccount
 ```
 CurrentAccount
 +----------------+--------+-----------------+------------------------+
-| AccountNumber  | Balance| OverdraftAmount | PerTransactionCharges |
+| AccountNumber  | Balance| OverdraftAmount | PerTransactionCharges  |
 +----------------+--------+-----------------+------------------------+
-| A002           | 2000   | 1000            | 5                     |
+| A002           | 2000   | 1000            | 5                      |
 +----------------+--------+-----------------+------------------------+
 ```
 

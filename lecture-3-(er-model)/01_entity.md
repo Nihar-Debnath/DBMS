@@ -1,8 +1,7 @@
 # -> First thing first that one entity means one row and one attribute means one column in the table remember that everytime
 # -> If there is 1000 entities means 1000 rows and 1000 attributes means 1000 columns in the table remember that everytime
 
-
-Let's go through the content of your image in **very detailed**, **simple**, and **easy-to-understand** language, with **examples** so you can grasp every point clearly.
+---
 
 ## 🔷 2. ER Model
 
